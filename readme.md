@@ -3,5 +3,5 @@
 ## How to run
 
 ```shell
-g++ -o main file.cpp && ./main
+g++ -o build/main file.cpp && ./build/main
 ```
