@@ -4,8 +4,10 @@ using namespace std;
 
 main()
 {
-  int side = 10;
+  int side;
+  cout << "Masukkan sisi persegi: ";
+  cin >> side;
 
-  cout << "luas persegi = " << pow(10, 2) << endl;
-  cout << "keliling persegi = " << 10 * 4 << endl;
+  cout << "luas persegi = " << pow(side, 2) << endl;
+  cout << "keliling persegi = " << side * 4 << endl;
 }
