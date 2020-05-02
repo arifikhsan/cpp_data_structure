@@ -11,7 +11,7 @@ main()
   cout << "Masukkan uang rupiah: ";
   cin >> rupiah;
 
-  cout << "Setara dengan" << endl;
+  cout << "Setara dengan:" << endl;
   cout << rupiah / dollarExchangeRate << " dolar" << endl;
   cout << rupiah / euroExchangeRate << " euro" << endl;
   cout << rupiah / yuanExchangeRate << " yuan" << endl;
