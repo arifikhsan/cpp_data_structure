@@ -15,4 +15,5 @@ main()
   cout << rupiah / dollarExchangeRate << " dolar" << endl;
   cout << rupiah / euroExchangeRate << " euro" << endl;
   cout << rupiah / yuanExchangeRate << " yuan" << endl;
+  cin;
 }

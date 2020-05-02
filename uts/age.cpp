@@ -23,4 +23,5 @@ main()
   cout << hourLength << " jam" << endl;
   cout << minuteLength << " menit" << endl;
   cout << secondLength << " detik" << endl;
+  cin;
 }
