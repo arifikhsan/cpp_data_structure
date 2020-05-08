@@ -2,7 +2,7 @@
 #include <math.h>
 using namespace std;
 
-main()
+int main()
 {
   int radius;
 
