@@ -26,9 +26,9 @@ int main()
 
   cout << endl;
   cout << "Masukkan jumlah barang: ";
-  cin >> price;
-  cout << "Masukkan harga barang: ";
   cin >> quantity;
+  cout << "Masukkan harga barang: ";
+  cin >> price;
   cout << endl;
 
   grossPrice = price * quantity;
