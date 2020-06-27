@@ -1,4 +1,4 @@
-// mengalihkan proses menuju ke suatu label
+//? 5.8
 
 #include <iostream>
 using namespace std;
@@ -13,7 +13,7 @@ bismillah:
 subhanallah:
   cout << "Subhanallah" << endl;
 
-  if (number++ < 10)
+  if (number++ < 5)
   {
     goto bismillah;
     goto subhanallah;

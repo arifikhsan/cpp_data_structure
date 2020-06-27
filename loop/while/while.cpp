@@ -1,10 +1,15 @@
-//? 5.2
+//? 5.5
 
 #include <iostream>
 using namespace std;
 
 int main()
 {
-  for (int number = 10; number >= 0; number--)
+  unsigned int number = 10;
+
+  while (number > 0)
+  {
     cout << "Number is: " << number << endl;
+    number--;
+  }
 }
