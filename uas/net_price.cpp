@@ -3,20 +3,21 @@ using namespace std;
 
 double calculateDiscount(int quantity, int grossPrice)
 {
-  const unsigned int NIM = 021;  //? 1811021
-  const double DISCOUNT_SMALL = 2.5;
+  const unsigned int NIM = 021; //? 1811021
+  double DISCOUNT_SMALL = 2.5;
   const int DISCOUNT_BIG = 10;
 
-  int discountValue = quantity > NIM ? DISCOUNT_BIG : DISCOUNT_SMALL;
+  double discountValue = quantity > NIM ? DISCOUNT_BIG : DISCOUNT_SMALL;
+  cout << "Besar diskon (persen): " << discountValue << endl;
   return grossPrice * discountValue / 100;
 }
 
 int main()
 {
   int quantity;
-  int price;
+  double price;
 
-  int grossPrice;
+  double grossPrice;
   double discountPrice;
   double netPrice;
 
