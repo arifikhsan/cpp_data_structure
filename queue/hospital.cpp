@@ -67,6 +67,12 @@ int main()
       goto initial_loop;
     }
 
+    if (operation_queue != 1 && operation_queue != 2 && operation_queue != 3)
+    {
+      cout << "Pilihan tidak valid." << endl;
+      goto initial_loop;
+    }
+
     switch (operation_queue)
     {
     case 1:
@@ -81,8 +87,7 @@ int main()
       allow_patient_queue = false;
 
     default:
-      cout << "Pilihan tidak valid." << endl;
-      goto initial_loop;
+      allow_patient_queue = false;
       break;
     }
 
