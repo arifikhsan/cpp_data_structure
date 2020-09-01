@@ -19,7 +19,7 @@ int main()
 {
   const unsigned int initial_queue = 1;
   unsigned int current_queue = 0;
-  const unsigned int max_queue = 4; // insert student ID
+  const unsigned int max_queue = 32; // insert student ID
   queue<int> hospital_queue;
   bool allow_patient_queue = true;
   int unsigned operation_queue;
