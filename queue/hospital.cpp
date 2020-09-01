@@ -93,24 +93,6 @@ int main()
 
     cout << "======================================" << endl;
   }
-
-  // hospital_queue.push(1);
-  // myqueue.push(2);
-  // cout << "front: " << myqueue.front() << endl;
-  // cout << "back: " << myqueue.back() << endl;
-  // cout << "size: " << myqueue.size() << endl;
-  // cout << "empty: " + myqueue.empty() << endl;
-
-  // myqueue.pop();
-  // myqueue.pop();
-  // cout << "empty: " << myqueue.empty() << endl;
-
-  // Printing content of queue
-  // while (!myqueue.empty())
-  // {
-  //   cout << ' ' << myqueue.front();
-  //   myqueue.pop();
-  // }
 }
 
 bool is_queue_full(queue<int> hospital_queue, int max_queue)
