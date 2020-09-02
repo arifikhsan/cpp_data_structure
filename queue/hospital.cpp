@@ -19,7 +19,7 @@ int main()
 {
   const unsigned int initial_queue = 1;
   unsigned int current_queue = 0;
-  const unsigned int max_queue = 4; // insert student ID
+  const unsigned int max_queue = 32; // insert student ID
   queue<int> hospital_queue;
   bool allow_patient_queue = true;
   int unsigned operation_queue;
@@ -52,6 +52,10 @@ int main()
     }
 
     cout << "3. Tutup antrian dan keluar aplikasi (3)" << endl;
+    if (hospital_queue.size() == 0)
+    {
+      cout << "4. Tambah 31 orang (4)" << endl;
+    }
     cout << "--------------------------------------" << endl;
     cin >> operation_queue;
 
@@ -67,7 +71,7 @@ int main()
       goto initial_loop;
     }
 
-    if (operation_queue != 1 && operation_queue != 2 && operation_queue != 3)
+    if (operation_queue != 1 && operation_queue != 2 && operation_queue != 3 && operation_queue != 4)
     {
       cout << "Pilihan tidak valid." << endl;
       goto initial_loop;
@@ -85,6 +89,14 @@ int main()
 
     case 3:
       allow_patient_queue = false;
+      break;
+
+    case 4:
+      for (size_t index = 0; index < 31; index++)
+      {
+        hospital_queue.push(current_queue++);
+      }
+      break;
 
     default:
       allow_patient_queue = false;
