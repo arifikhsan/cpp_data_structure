@@ -13,7 +13,7 @@ int main()
     }
     else if (windSpeed >= 25 && windSpeed <= 38)
     {
-        cout << "String wind" << endl;
+        cout << "Strong wind" << endl;
     }
     else if (windSpeed >= 39 && windSpeed <= 54)
     {
