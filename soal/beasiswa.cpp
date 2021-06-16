@@ -27,7 +27,6 @@ int main() {
   isDeserve = isActive && semester >= 2 && GPA >= 3.00;
   isDeserveStr = isDeserve ? "ya" : "tidak";
 
-
   cout << "=== Hasil ===" << endl;
   cout << "Nama: " + name << endl;
   cout << "Aktif: " + isActiveStr << endl;
@@ -35,5 +34,4 @@ int main() {
   cout << "IPK: ";
   cout << fixed << setprecision(2) << GPA << endl;
   cout << "Berhak mendapatkan beasiswa: " + isDeserveStr << endl;
-
 }
